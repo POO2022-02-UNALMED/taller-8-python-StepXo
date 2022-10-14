@@ -3,8 +3,8 @@ from persona import Persona
 class Futbolista(Deportista,Persona):
     listaFutbolistas=[]
     def __init__(self, nombre, edad, altura, sexo, añosPracticando, golesMarcados, tarjetasRojas , piernaHabil, deporte = "Futbol"):
-        Persona.__init__(nombre, edad, altura, sexo)
-        Deportista.__init__(deporte, añosPracticando)
+        Persona.__init__(self, nombre, edad, altura, sexo)
+        Deportista.__init__(self, deporte, añosPracticando)
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetasRojas
         self._piernaHabil = piernaHabil
